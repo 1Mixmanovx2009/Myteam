@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #014E56;
+  font-family: "Livvic", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-header {
+  padding: 72px 0 129px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.header__logo-navbar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 80px;
+}
+
+.header__logo-link {
+  display: inline-block;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 40px;
+}
+
+.header__link {
+  font-size: 18px;
+  margin-bottom: 0;
+  font-weight: 600;
+  line-height: 28px;
+  color: white;
+}
+
+.header__contact-link {
+  width: 153px;
+  padding: 10px 0;
+  border-radius: 20px;
+  border: 2px solid white;
+  background-color: #014E56;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 0;
+  font-weight: 600;
+  line-height: 28px;
+  color: white;
+}
+.header__contact-link:hover {
+  transition: 0.4s linear;
+  background-color: white;
+  color: #014E56;
+  border-color: #014E56;
+}
+
+.header__hamburger-btn {
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .site-header {
+    padding: 64px 0 112px;
+  }
+  .header__logo-img {
+    width: 128px;
+    height: 32px;
+  }
+  .header__logo-navbar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 48px;
+  }
+}
+@media (max-width: 600px) {
+  .site-header {
+    padding: 48px 0 80px;
+  }
+  .header__logo-img {
+    width: 128px;
+    height: 32px;
+  }
+  .header__logo-navbar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0px;
+  }
+  .header__list {
+    display: none;
+  }
+  .header__contact-link {
+    display: none;
+  }
+  .header__hamburger-btn {
+    display: block;
+  }
+}
+.hero-section {
+  background-image: url(../images/Group\ 8.png);
+  background-repeat: no-repeat;
+  background-size: 100px 200px;
+  background-position: calc(50% - 661px) top;
+}
+
+.hero {
+  padding-bottom: 250px;
+  background-image: url(../../images/Group\ 7.png);
+  background-repeat: no-repeat;
+  background-size: 358px 100px;
+  background-position: right bottom;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px;
+}
+
+.hero__title-wrapper {
+  width: 570px;
+}
+
+.hero__title {
+  font-size: 100px;
+  margin-bottom: 0;
+  font-weight: 700;
+  line-height: 100px;
+  color: white;
+}
+
+.hero__title-color {
+  color: #F67E7E;
+}
+
+.hero__text-wrapper {
+  width: 445px;
+}
+
+.hero__text-top-line {
+  display: inline-block;
+  width: 50px;
+  height: 4px;
+  background-color: #79C8C7;
+  margin-bottom: 79px;
+}
+
+.hero__text {
+  font-size: 18px;
+  margin-bottom: 0;
+  font-weight: 600;
+  line-height: 28px;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    background-position: center bottom;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 24px;
+  }
+  .hero__text-top-line {
+    display: none;
+  }
+  .hero__title {
+    font-size: 74px;
+    margin-bottom: 0;
+    font-weight: 700;
+    line-height: 56px;
+    color: white;
+  }
+  .hero__text {
+    font-size: 15px;
+    margin-bottom: 0;
+    font-weight: 600;
+    line-height: 28px;
+    color: white;
+  }
+  .hero__title-color {
+    color: #F67E7E;
+  }
+  .hero__title-wrapper, .hero__text-wrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .hero {
+    padding-bottom: 197px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 18px;
+  }
+  .hero__title {
+    font-size: 40px;
+    margin-bottom: 0;
+    font-weight: 700;
+    line-height: 40px;
+    color: white;
+  }
+  .hero__title-color {
+    color: #F67E7E;
+  }
+}
+@media (max-width: 400px) {
+  .hero {
+    background-size: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */
